@@ -38,15 +38,15 @@ const mk2=(w,h)=>{const c=document.createElement('canvas');c.width=w;c.height=h;
    Put your files next to this HTML file and type their names below. Leave '' to use the built-in default.
    Images: jpg / png / webp.  Sounds: mp3 / ogg / wav. */
 const ASSETS={
-  background:'',      // horror background picture
-  brick:'',           // picture used on every brick
-  jumpscareImage:'',  // full-screen jump-scare picture
+  background:'Grave.jpg',      // horror background picture
+  brick:'Brick.jpg',           // picture used on every brick
+  jumpscareImage:'Jump.gif',  // full-screen jump-scare picture
   jumpscareSound:'',  // jump-scare sound
   thunderSound:'',    // plays on every lightning strike
   gameMusic:'',       // loops while playing
   menuMusic:'',       // loops on the menu
-  menuBackground:'',  // picture behind the main menu
-  endBackground:''    // picture behind the Try again / game-over screen
+  menuBackground:'Menu.jpg',  // picture behind the main menu
+  endBackground:'Try.jpg'    // picture behind the Try again / game-over screen
 };
 const A={};
 {const img=(k,u)=>{if(!u)return;const i=new Image();i.onload=()=>{A[k]=i;if(W){if(k==='bg')buildBG();if(k==='brick')bricks.forEach(b=>b.sp=null)}};i.src=u},
